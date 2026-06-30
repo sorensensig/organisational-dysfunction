@@ -1,0 +1,181 @@
+{
+  "skill": "organisational-dysfunction",
+  "description": "Scenario set for the org-dysfunction loop harness. Positive scenarios test ROUTING (does the skill pull the right reference?) and TRIGGERING (should the skill fire at all?). Negative scenarios are near-misses that share vocabulary but should NOT trigger. expected_refs are reference file slugs (without .md); list every acceptable target.",
+  "scenarios": [
+    {
+      "id": "standup-status-round",
+      "prompt": "our daily standup has basically become everyone reading out what they did yesterday to the team lead, who nods and writes it down. nobody actually listens to anyone else because we're all on totally separate tickets. people keep asking if we can just kill it. is there a better format?",
+      "should_trigger": true,
+      "expected_refs": ["01-the-daily-status-report", "07-individualism"]
+    },
+    {
+      "id": "retro-groundhog-day",
+      "prompt": "every retro we raise the same 3 problems (slow approvals, unclear priorities, too many deps on the platform team) and every retro we write the same action items and nothing changes. the team is getting cynical about retros entirely. what am I doing wrong as a facilitator?",
+      "should_trigger": true,
+      "expected_refs": ["03-the-powerless-retrospective"]
+    },
+    {
+      "id": "okrs-cascaded",
+      "prompt": "leadership set the company OKRs and now each department head is 'cascading' them down to us. we're told we 'own' our team OKRs but honestly we're just rewording the VP's objectives in our own words. then we score them 0-1.0 every quarter and it feeds into reviews. feels hollow.",
+      "should_trigger": true,
+      "expected_refs": ["18-okrs-imposed-from-above"]
+    },
+    {
+      "id": "dora-dashboards",
+      "prompt": "our CTO wants every team to hit elite DORA numbers this quarter. we built grafana dashboards for deploy freq and lead time and set targets. we got a bump for a month then it slid back and now he's asking for 'more discipline'. starting to feel like we're gaming numbers.",
+      "should_trigger": true,
+      "expected_refs": ["24-dora-the-wrong-way-round", "14-local-optimisations"]
+    },
+    {
+      "id": "frozen-middle",
+      "prompt": "we did an agile transformation 18 months ago, teams supposedly have autonomy now, but decisions still take forever and just die somewhere in the middle. the middle managers are in meetings all day but nothing moves. leadership thinks they're resisting and wants to send them on a mindset course.",
+      "should_trigger": true,
+      "expected_refs": ["15-the-frozen-middle"]
+    },
+    {
+      "id": "quiet-quitting",
+      "prompt": "half my team has mentally checked out. they do exactly what's asked and not one thing more, log off at 4 on the dot. HR is calling it quiet quitting and wants me to have 'motivation conversations'. these used to be really engaged people.",
+      "should_trigger": true,
+      "expected_refs": ["08-quiet-quitting", "48-its-just-a-job"]
+    },
+    {
+      "id": "empowerment-without-authority",
+      "prompt": "my manager keeps telling us we're 'empowered to make decisions' but every time we actually decide something it gets overturned upstairs or we need three sign-offs for anything that costs money. the word empowerment is starting to feel like a joke.",
+      "should_trigger": true,
+      "expected_refs": ["36-empowerment", "16-fear-of-making-decisions"]
+    },
+    {
+      "id": "people-resist-change",
+      "prompt": "we're rolling out a new operating model and the consultants keep saying 'people naturally resist change' and we need a comms plan to get buy-in. but the people pushing back are our best engineers and their objections actually seem pretty reasonable to me?",
+      "should_trigger": true,
+      "expected_refs": ["35-people-resist-change", "44-change-agents-of-the-status-quo"]
+    },
+    {
+      "id": "po-bottleneck",
+      "prompt": "our product owner has become a total bottleneck — every decision routes through her, she writes all the stories, and if she's on holiday the team basically stalls. she's brilliant but it feels like we just recreated a project manager with a different title.",
+      "should_trigger": true,
+      "expected_refs": ["38-the-product-owner-trap"]
+    },
+    {
+      "id": "safe-scaling",
+      "prompt": "leadership wants to roll out SAFe across 12 teams with PI planning, release train engineers, the whole thing. I came from a startup where small teams just shipped and I'm worried we're about to rebuild the exact hierarchy agile was supposed to remove. am I wrong?",
+      "should_trigger": true,
+      "expected_refs": ["50-the-agile-scaling-trap"]
+    },
+    {
+      "id": "burnout-resilience",
+      "prompt": "we've had three people go off sick with burnout this year. the company response was to offer a mindfulness app subscription and a resilience webinar. nobody's talking about the fact that we're permanently understaffed and on-call is brutal.",
+      "should_trigger": true,
+      "expected_refs": ["25-burned-by-design", "56-permanent-urgency"]
+    },
+    {
+      "id": "perf-review-individual",
+      "prompt": "we just spent two years building genuinely collaborative teams and now it's annual review season — everyone gets an individual rating and ranking, stack-ranked against each other. you can already feel people starting to hoard credit again.",
+      "should_trigger": true,
+      "expected_refs": ["41-the-performance-review", "54-pay-and-reward"]
+    },
+    {
+      "id": "bonus-undermines-team",
+      "prompt": "finance just announced individual bonus targets for next year, each person gets personal KPIs. the teams we built around shared ownership are going to get torn apart by this the second people realise their bonus depends on their own number.",
+      "should_trigger": true,
+      "expected_refs": ["54-pay-and-reward", "41-the-performance-review"]
+    },
+    {
+      "id": "local-optimisation",
+      "prompt": "every department hits its own targets — support closes tickets fast, sales smashes quota, engineering ships features — but the actual customer experience is getting worse and worse and nobody owns the end to end. how does everyone win locally while we lose overall?",
+      "should_trigger": true,
+      "expected_refs": ["14-local-optimisations"]
+    },
+    {
+      "id": "psych-safety-patch",
+      "prompt": "we ran a psychological safety workshop because the engagement survey said people don't speak up. but two weeks later someone raised a real concern in a town hall and got visibly slapped down by a director. the workshop feels like a band-aid.",
+      "should_trigger": true,
+      "expected_refs": ["17-psychological-safety-as-a-patch"]
+    },
+    {
+      "id": "ai-into-broken-system",
+      "prompt": "execs are convinced that dropping copilot and a bunch of AI agents into our delivery process will fix our velocity problem. but our process is a mess of handoffs and approvals — I feel like we're about to automate the chaos. how do I make that argument?",
+      "should_trigger": true,
+      "expected_refs": ["21-deploying-ai-into-a-broken-system"]
+    },
+    {
+      "id": "team-topologies-shapes",
+      "prompt": "we reorganised into stream-aligned teams and platform teams straight out of Team Topologies, drew all the boxes, but nothing really changed — the same people approve the same things, authority didn't actually move anywhere. we just relabelled the org chart.",
+      "should_trigger": true,
+      "expected_refs": ["29-team-topologies-the-wrong-way-round"]
+    },
+    {
+      "id": "strategy-unclear",
+      "prompt": "we keep telling teams to 'be autonomous and make their own calls' but when they ask what we're actually trying to achieve as a company they get three different answers from three execs. how can they self-direct toward a goal nobody can state clearly?",
+      "should_trigger": true,
+      "expected_refs": ["10-the-companys-strategy-is-unclear"]
+    },
+    {
+      "id": "them-and-us",
+      "prompt": "dev and ops here are basically at war. devs throw stuff over the wall, ops blocks releases, each side has a whole folklore about how the other is incompetent. management keeps doing 'one team' offsites that last about a week.",
+      "should_trigger": true,
+      "expected_refs": ["46-them-and-us"]
+    },
+    {
+      "id": "career-path-away-from-work",
+      "prompt": "our best engineer just told me the only way to get promoted past senior here is to become a manager and stop coding. so all our deepest technical people are being pulled out of the work they're brilliant at. seems insane but it's the ladder.",
+      "should_trigger": true,
+      "expected_refs": ["52-career-paths"]
+    },
+    {
+      "id": "learning-org-no-learning",
+      "prompt": "we call ourselves a learning organisation — lunch and learns, a Udemy budget, brown bags. but honestly the way we actually build software hasn't changed in years, and the stuff people 'learn' never makes it into how we work. it's theatre.",
+      "should_trigger": true,
+      "expected_refs": ["55-the-learning-organisation-that-doesnt-learn"]
+    },
+    {
+      "id": "corridor-decisions",
+      "prompt": "the real decisions here never happen in the meetings. they get made in side chats and corridor conversations between a couple of senior people, and the rest of us find out after. the official governance is basically a rubber stamp.",
+      "should_trigger": true,
+      "expected_refs": ["59-the-corridor-conversation", "13-hippos-and-dungeon-masters"]
+    },
+
+    {
+      "id": "neg-reword-okrs",
+      "prompt": "can you reword these three OKRs to sound a bit punchier and more inspiring for the all-hands slide? here they are: ...",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-jira-board",
+      "prompt": "what's a good Jira board column setup for a kanban team — like what statuses/swimlanes would you recommend for a 6-person team?",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-scrum-master-jd",
+      "prompt": "write me a job description for a scrum master role we're hiring for, mid-level, fintech, hybrid in Oslo.",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-db-perf",
+      "prompt": "our postgres queries on the orders table got really slow after the last release. how do I figure out which indexes are missing and optimize the performance?",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-summarize-review-doc",
+      "prompt": "my manager sent me my written performance review as a 4-page PDF. can you summarise the key points and the rating into a few bullets for me?",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-offsite-activities",
+      "prompt": "we've got a team offsite next month, can you suggest some fun team-building activities and an icebreaker for a group of 15?",
+      "should_trigger": false,
+      "expected_refs": []
+    },
+    {
+      "id": "neg-tuckman-glossary",
+      "prompt": "give me a one-line definition of each stage of forming-storming-norming-performing for a glossary in our onboarding doc.",
+      "should_trigger": false,
+      "expected_refs": []
+    }
+  ]
+}

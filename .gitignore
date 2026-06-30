@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+
+# Loop run artifacts (regenerable; contain machine-specific paths)
+loop/history/
+
+# macOS
+.DS_Store

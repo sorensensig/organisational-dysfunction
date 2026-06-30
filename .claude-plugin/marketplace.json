@@ -1,0 +1,22 @@
+{
+  "name": "organisational-dysfunction",
+  "owner": {
+    "name": "Sigurd Sæther Sørensen",
+    "email": "sorensensig@gmail.com"
+  },
+  "metadata": {
+    "description": "Org-design skills for diagnosing organisational and team dysfunctions through open sociotechnical systems theory.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "organisational-dysfunction",
+      "description": "Diagnose recurring organisational and team dysfunctions (stuck decisions, hollow agile rituals, metric-chasing, disengagement, change that never lands) using open sociotechnical systems theory and the DP1/DP2 design-principle lens.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/organisational-dysfunction"
+      ]
+    }
+  ]
+}
