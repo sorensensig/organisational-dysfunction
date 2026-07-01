@@ -1,5 +1,13 @@
 # Organisational Dysfunction
 
+|  |  |
+|---|---|
+| **Creator** | Sigurd Sæther Sørensen |
+| **Based on** | Trond Hjorteland — *Organisational Dysfunction of the Day* ([full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)) |
+| **Framework** | Open sociotechnical systems theory (DP1 / DP2) |
+| **Contents** | 1 skill · 59 dysfunctions |
+| **Version** | 0.1.0 |
+
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
 It packages **59 named dysfunctions** from Trond Hjorteland's *"Organisational Dysfunction of the Day"* series, all read through the same lens: **open sociotechnical systems theory (OST)** and its DP1 (top-down bureaucracy) vs DP2 (self-managing teams) distinction.
