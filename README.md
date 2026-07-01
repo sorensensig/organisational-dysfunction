@@ -25,7 +25,56 @@ Whenever someone describes a workplace or team problem that smells structural ra
 
 ## Installation
 
-This repository is a Claude Code plugin marketplace. Add it as a marketplace and install the `organisational-dysfunction` plugin, or drop the `skills/organisational-dysfunction` folder into your `~/.claude/skills/` directory.
+Two ways: install it as a plugin (recommended — you get updates by pulling the repo), or just copy the skill folder in.
+
+### Option 1 — Install as a plugin (recommended)
+
+A "marketplace" in Claude Code is just a Git repo that lists installable plugins. You point Claude Code at this repo once, then install the plugin from it. Run these inside Claude Code:
+
+1. **Add this repo as a marketplace** (do this once):
+   ```
+   /plugin marketplace add sorensensig/organisational-dysfunction
+   ```
+2. **Install the plugin** from it:
+   ```
+   /plugin install organisational-dysfunction@sorensen-skills
+   ```
+   The format is `plugin-name@marketplace-name` — here the plugin is `organisational-dysfunction` and the marketplace is `sorensen-skills`.
+3. If the skill isn't active immediately, **restart Claude Code** (or run `/reload-plugins`).
+
+**Prefer clicking to typing?** Just run `/plugin` to open the manager: go to the **Marketplaces** tab and add `sorensensig/organisational-dysfunction`, then the **Discover** tab, pick **organisational-dysfunction**, and press Enter to install.
+
+Once installed, the skill activates **automatically** whenever you describe an org/team dysfunction — you don't invoke it by name.
+
+- **Check it's installed:** `/plugin` → **Installed** tab.
+- **Uninstall:** `/plugin uninstall organisational-dysfunction@sorensen-skills`
+- **Remove the marketplace entirely:** `/plugin marketplace remove sorensen-skills`
+
+### Option 2 — Copy the skill folder (simplest, no plugin system)
+
+```bash
+git clone https://github.com/sorensensig/organisational-dysfunction
+cp -r organisational-dysfunction/skills/organisational-dysfunction ~/.claude/skills/
+```
+
+Restart Claude Code and you're done.
+
+### Team / scripted setup (optional)
+
+To have a whole team pick it up automatically, add this to the project's `.claude/settings.json` (they'll be prompted to trust and install it):
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "sorensen-skills": {
+      "source": { "source": "github", "repo": "sorensensig/organisational-dysfunction" }
+    }
+  },
+  "enabledPlugins": {
+    "organisational-dysfunction@sorensen-skills": true
+  }
+}
+```
 
 ## Attribution
 
