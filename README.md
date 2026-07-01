@@ -25,43 +25,57 @@ Whenever someone describes a workplace or team problem that smells structural ra
 
 ## Installation
 
-Two ways: install it as a plugin (recommended — you get updates by pulling the repo), or just copy the skill folder in.
+How you install depends on which Claude you use. Pick your surface below. In every case the skill then activates **automatically** when you describe an org/team dysfunction — you never call it by name.
 
-### Option 1 — Install as a plugin (recommended)
+> **Two words worth knowing:** a **skill** is the unit of knowledge (a `SKILL.md` folder). A **plugin** is a bundle you install from a **marketplace** — which is just a Git repo that lists plugins. This repo is both: it contains the skill *and* acts as a one-plugin marketplace named `sorensen-skills`.
 
-A "marketplace" in Claude Code is just a Git repo that lists installable plugins. You point Claude Code at this repo once, then install the plugin from it. Run these inside Claude Code:
+### Claude Code (terminal, VS Code, JetBrains)
 
-1. **Add this repo as a marketplace** (do this once):
+Run these inside Claude Code:
+
+1. **Add this repo as a marketplace** (once):
    ```
    /plugin marketplace add sorensensig/organisational-dysfunction
    ```
-2. **Install the plugin** from it:
+2. **Install the plugin:**
    ```
    /plugin install organisational-dysfunction@sorensen-skills
    ```
-   The format is `plugin-name@marketplace-name` — here the plugin is `organisational-dysfunction` and the marketplace is `sorensen-skills`.
-3. If the skill isn't active immediately, **restart Claude Code** (or run `/reload-plugins`).
+   (Format is `plugin-name@marketplace-name`.)
+3. If it's not active immediately, **restart Claude Code** (or run `/reload-plugins`).
 
-**Prefer clicking to typing?** Just run `/plugin` to open the manager: go to the **Marketplaces** tab and add `sorensensig/organisational-dysfunction`, then the **Discover** tab, pick **organisational-dysfunction**, and press Enter to install.
+Prefer clicking? Run **`/plugin`** → **Marketplaces** tab → add `sorensensig/organisational-dysfunction` → **Discover** tab → pick **organisational-dysfunction** → Enter.
+Uninstall: `/plugin uninstall organisational-dysfunction@sorensen-skills` · remove marketplace: `/plugin marketplace remove sorensen-skills`.
 
-Once installed, the skill activates **automatically** whenever you describe an org/team dysfunction — you don't invoke it by name.
-
-- **Check it's installed:** `/plugin` → **Installed** tab.
-- **Uninstall:** `/plugin uninstall organisational-dysfunction@sorensen-skills`
-- **Remove the marketplace entirely:** `/plugin marketplace remove sorensen-skills`
-
-### Option 2 — Copy the skill folder (simplest, no plugin system)
-
+**No-marketplace alternative** (also works for the local Claude Desktop app, which reads the same folder):
 ```bash
 git clone https://github.com/sorensensig/organisational-dysfunction
 cp -r organisational-dysfunction/skills/organisational-dysfunction ~/.claude/skills/
 ```
 
-Restart Claude Code and you're done.
+### Claude Cowork
 
-### Team / scripted setup (optional)
+1. Open the **Cowork** tab → **Customize** → **Plugins**.
+2. Under **Personal plugins**, click **+** → **Add marketplace** → **Add from a repository**, and enter:
+   `https://github.com/sorensensig/organisational-dysfunction`
+3. Back on the **Plugins** tab, **Browse plugins**, find **organisational-dysfunction**, and click **Install**.
 
-To have a whole team pick it up automatically, add this to the project's `.claude/settings.json` (they'll be prompted to trust and install it):
+### Claude.ai (web) & Claude Desktop app
+
+These use the **Skills** feature — you upload the packaged skill.
+
+1. **Enable code execution first** (Skills require it):
+   - **Free / Pro / Max:** Settings → **Capabilities** → turn on **"Code execution and file creation"**.
+   - **Team / Enterprise:** an admin enables it under **Organization settings → Skills**.
+2. **Download the packaged skill:** [**organisational-dysfunction-skill.zip**](https://github.com/sorensensig/organisational-dysfunction/releases/latest) (from the latest release).
+3. Go to **Customize → Skills**, click **+** → **Create skill** → **Upload a skill**, and select the ZIP.
+
+Skills uploaded this way are per-user and don't sync to other surfaces.
+*(To build the ZIP yourself: `cd skills && zip -r organisational-dysfunction-skill.zip organisational-dysfunction` — the folder must sit at the ZIP's root.)*
+
+### Team / scripted setup (Claude Code)
+
+To have a team pick it up automatically, add this to the project's `.claude/settings.json` (members are prompted to trust and install it):
 
 ```json
 {
