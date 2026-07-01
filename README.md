@@ -1,6 +1,6 @@
 # Organisational Dysfunction
 
-> **Credit:** All 59 dysfunctions originate from **Trond Hjorteland**'s *"Organisational Dysfunction of the Day"* series ([LinkedIn](https://www.linkedin.com/in/trondhjort/) · [full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)). This package **synthesises and paraphrases** that work through the open sociotechnical systems lens he uses — it is not a verbatim copy. Each reference links its specific source post. For his own words, and the forthcoming (2026) book, see the series. Created by Sigurd Sæther Sørensen.
+> **Credit:** All 59 dysfunctions originate from **Trond Hjorteland**'s *"Organisational Dysfunction of the Day"* series ([LinkedIn](https://www.linkedin.com/in/trondhjort/) · [full list](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/)). This package **synthesises and paraphrases** that work through the open sociotechnical systems lens he uses — it is not a verbatim copy. Each reference links its specific source post. For his own words, and the forthcoming (2026) book, see the series.
 
 A Claude Code plugin of org-design knowledge for diagnosing the recurring ways organisations and teams get stuck — and what to actually do about them.
 
