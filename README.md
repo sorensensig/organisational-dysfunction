@@ -98,7 +98,7 @@ Each reference file also notes its source dysfunction number; the corresponding 
 
 ## Changelog
 
-New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them. Newest first.
+New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them, and each version is cut as a [GitHub Release](https://github.com/sorensensig/organisational-dysfunction/releases). **Installed copies do not auto-update** — click **Watch → Releases** on this repo to be notified of new versions, then re-pull (see [Installation](#installation)). Newest first.
 
 ### 0.2.0 — 2026-07-02
 - Added **#60 The output nobody owned** and **#61 Rearranging the furniture** (59 → 61 dysfunctions). Generated via the auto-update pipeline; both passed the targeted routing/triggering test.
