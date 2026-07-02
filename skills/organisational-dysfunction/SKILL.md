@@ -54,6 +54,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - **#5 Forming–storming–norming–performing** — using Tuckman to explain/await team maturity instead of changing structure. → `references/05-forming-storming-norming-performing.md`
 - **#11 Workshops not working** — workshops produce sticky notes and no change. → `references/11-workshops-not-working.md`
 - **#28 Involvement theatre** — people are "consulted" on decisions already made. → `references/28-involvement-theatre.md`
+- **#60 The output nobody owned** — workshop outputs get curated out of sight, so the group can't trust or own the result. → `references/60-the-output-nobody-owned.md`
 
 ### Metrics, money & measurement
 - **#23 The error factory** — defects treated as individual mistakes to be counted and punished. → `references/23-the-error-factory.md`
@@ -112,6 +113,7 @@ Grouped by theme for navigation. Each entry: number, name, a recognition cue, an
 - **#42 The pilot trap** — successful pilots that can never scale because the system didn't change. → `references/42-the-pilot-trap.md`
 - **#45 Fixing the process** — adding process to compensate for a structural fault. → `references/45-fixing-the-process.md`
 - **#50 The agile scaling trap** — scaling frameworks (SAFe etc.) re-impose DP1 at scale. → `references/50-the-agile-scaling-trap.md`
+- **#61 Rearranging the furniture** — job-enrichment initiatives that improve individual roles without changing who designs the work. → `references/61-rearranging-the-furniture.md`
 
 ### AI
 - **#21 Deploying AI into a broken system** — AI amplifies a dysfunctional structure instead of fixing it. → `references/21-deploying-ai-into-a-broken-system.md`
