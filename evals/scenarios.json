@@ -134,6 +134,18 @@
       "should_trigger": true,
       "expected_refs": ["59-the-corridor-conversation", "13-hippos-and-dungeon-masters"]
     },
+    {
+      "id": "workshop-postits-lost",
+      "prompt": "we ran a big strategy workshop, hundreds of post-its, and the facilitators went off and came back with a gorgeous synthesis deck. but half the team quietly feels like their points got merged away or reworded, and nobody really trusts the 'outcomes' we're now supposed to act on. what went wrong and how do we run these so people actually own the result?",
+      "should_trigger": true,
+      "expected_refs": ["60-the-output-nobody-owned"]
+    },
+    {
+      "id": "job-enrichment-recycled",
+      "prompt": "every couple of years HR rolls out a new role-enrichment / job-crafting programme — more variety, clearer goals, learning budgets, feedback loops. it perks people up for a few months then fades, and then we do the whole thing again under a new name. why doesn't it ever stick?",
+      "should_trigger": true,
+      "expected_refs": ["61-rearranging-the-furniture"]
+    },
 
     {
       "id": "neg-reword-okrs",
