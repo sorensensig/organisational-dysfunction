@@ -1,6 +1,6 @@
 # The pilot trap
 
-*Dysfunction #42 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7468542180836519936-YvZu) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#42` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7468542180836519936-YvZu) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

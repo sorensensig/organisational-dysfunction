@@ -1,6 +1,6 @@
 # The learning organisation that doesn't learn
 
-*Dysfunction #55 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7475431307372728320-DC11) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#55` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7475431307372728320-DC11) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

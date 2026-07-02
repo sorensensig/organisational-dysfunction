@@ -1,6 +1,6 @@
 # The pair that runs everything
 
-*Dysfunction #49 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7472585057053069314-CLCO) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#49` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7472585057053069314-CLCO) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

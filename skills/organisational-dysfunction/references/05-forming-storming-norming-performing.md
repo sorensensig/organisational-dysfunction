@@ -1,6 +1,6 @@
 # Forming–storming–norming–performing
 
-*Dysfunction #5 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-share-7447891509602930688-wFJG) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#5` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-share-7447891509602930688-wFJG) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

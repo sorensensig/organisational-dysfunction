@@ -1,6 +1,6 @@
 # Outsourcing the future
 
-*Dysfunction #37 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7466024296906301440-IKpO) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#37` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7466024296906301440-IKpO) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

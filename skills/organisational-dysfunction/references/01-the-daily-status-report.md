@@ -1,6 +1,6 @@
 # The daily status report
 
-*Dysfunction #1 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_sociotechnical-agile-sts-share-7447223490782388224-nyhV) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#1` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_sociotechnical-agile-sts-share-7447223490782388224-nyhV) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

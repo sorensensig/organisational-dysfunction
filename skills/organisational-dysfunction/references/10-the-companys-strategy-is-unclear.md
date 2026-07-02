@@ -1,6 +1,6 @@
 # The company's strategy is unclear
 
-*Dysfunction #10 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-share-7450079065987887104-jLDM) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#10` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-share-7450079065987887104-jLDM) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

@@ -1,6 +1,6 @@
 # Team Topologies, the wrong way round
 
-*Dysfunction #29 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7462030466523590657-VIuu) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#29` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7462030466523590657-VIuu) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

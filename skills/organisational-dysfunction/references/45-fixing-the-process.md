@@ -1,6 +1,6 @@
 # Fixing the process
 
-*Dysfunction #45 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7470357877627731970-HkKz) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#45` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7470357877627731970-HkKz) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

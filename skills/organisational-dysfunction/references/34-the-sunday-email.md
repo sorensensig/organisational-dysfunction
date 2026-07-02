@@ -1,6 +1,6 @@
 # The Sunday email
 
-*Dysfunction #34 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7464920253190426624--Gbh) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#34` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7464920253190426624--Gbh) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

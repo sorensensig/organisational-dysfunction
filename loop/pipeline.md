@@ -9,6 +9,7 @@ The autonomous procedure the `org-dysfunction-watcher` scheduled task follows ea
 - **Fresh clone.** Work from a fresh `git clone`, not any local working copy.
 - **Human gate at merge.** Open PRs; do not merge. The maintainer reviews and merges.
 - **Verify, don't assume.** After pushing a branch or opening/updating a PR, confirm the remote actually reflects it (e.g. re-read the PR's changed-file list) before reporting success. A push or PR update that silently failed must be treated as *not done* — never report a change you haven't confirmed landed.
+- **Never write a dysfunction number as a bare `#N`.** GitHub auto-links `#N` to issue/PR N, so a bare `#60` in a README, `SKILL.md`, changelog, reference file, PR/issue body, or commit message becomes a wrong link to that repo's PR/issue #60. In Markdown, always write the number as a code span — `` `#N` `` (code spans never autolink). In commit messages and PR titles (not code-span-rendered, but `#N` still autolinks), write `no. N` instead.
 
 ## Tools / preconditions
 
@@ -33,7 +34,7 @@ Capture the issue number.
 ### 3. Generate references (one branch for the batch)
 - Branch: `git checkout -b add/dysfunctions-<lowest>-<highest>` off `main`.
 - For each NEW item, following `loop/authoring-guide.md`: fetch the post, synthesise `references/NN-slug.md` (symptom → sociotechnical diagnosis with the specific OST construct → structural fix + local moves → 3–5 `[[related]]` links to existing slugs).
-- Update `skills/organisational-dysfunction/SKILL.md`: insert an index line for each new item under the best-fit theme heading, in the form `- **#N Title** — one-line cue. → references/NN-slug.md`. Also fix any hard-coded count in its prose (e.g. "The N reference files describe individual dysfunctions").
+- Update `skills/organisational-dysfunction/SKILL.md`: insert an index line for each new item under the best-fit theme heading, in the form `` - `#N` **Title** — one-line cue. → `references/NN-slug.md` `` (the number is a code span `` `#N` ``, never a bare `#N` — see Principles). Also fix any hard-coded count in its prose (e.g. "The N reference files describe individual dysfunctions").
 - Update `README.md`: bump the **Contents** row of the metadata table (`1 skill · <count> dysfunctions`) **and every other `<count> dysfunctions` mention in the prose** (e.g. "It packages N named dysfunctions", "index of all N dysfunctions") — a stale count in the body is easy to miss; bump the **Version** row too; and add a dated entry to the **Changelog** section (newest first, `### <version> — <YYYY-MM-DD>`) summarising the added dysfunction(s). Bump `.claude-plugin/marketplace.json` `version` to match.
 
 ### 4. Test (targeted)

@@ -1,6 +1,6 @@
 # The output nobody owned
 
-*Dysfunction #60 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7477964427401814016-uuih) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#60` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7477964427401814016-uuih) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

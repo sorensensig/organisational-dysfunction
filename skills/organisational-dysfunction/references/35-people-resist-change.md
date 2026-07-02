@@ -1,6 +1,6 @@
 # People resist change
 
-*Dysfunction #35 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7465295955588886531-dQg0) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#35` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7465295955588886531-dQg0) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 

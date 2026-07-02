@@ -20,7 +20,7 @@ How to write one `references/NN-slug.md` file for the `organisational-dysfunctio
 ```markdown
 # <Title>
 
-*Dysfunction #<N> in Trond Hjorteland's ["Organisational Dysfunction of the Day"](<POST_URL>) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#<N>` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](<POST_URL>) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 
@@ -52,3 +52,4 @@ How to write one `references/NN-slug.md` file for the `organisational-dysfunctio
 - Name the specific OST construct the post relies on (this is the dimension most likely to be thin — don't skip it).
 - Be honest about altitude in "If you can't change the structure yet".
 - `[[links]]` use bare slugs (no number) and must resolve to a real `references/<NN>-<slug>.md` file.
+- **Never write a dysfunction's series number as a bare `#N`.** On GitHub, `#N` auto-links to issue/PR N. Always write it as a code span — `` `#N` `` — as shown in the template above.

@@ -1,6 +1,6 @@
 # Rearranging the furniture
 
-*Dysfunction #61 in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7478322822759682049-PKVk) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
+*Dysfunction `#61` in Trond Hjorteland's ["Organisational Dysfunction of the Day"](https://www.linkedin.com/posts/trondhjort_opensystemstheory-sociotechnical-orgdesign-activity-7478322822759682049-PKVk) series — synthesised through open sociotechnical systems theory; paraphrased, not quoted.*
 
 ## How it shows up
 
