@@ -95,3 +95,13 @@ To have a team pick it up automatically, add this to the project's `.claude/sett
 The references **synthesise and paraphrase** [Trond Hjorteland](https://www.linkedin.com/in/trondhjort/)'s publicly posted series through the OST framing he uses — they are not verbatim copies. For his own words, see his article [**"Organisational Dysfunction of the Day — full list"**](https://www.linkedin.com/pulse/organisational-dysfunction-day-full-list-trond-hjorteland-gxrze/) on LinkedIn (which links every individual post) and his forthcoming (2026) book.
 
 Each reference file also notes its source dysfunction number; the corresponding original post can be found via the full-list article above.
+
+## Changelog
+
+New entries are appended automatically by the update pipeline (`loop/pipeline.md`) as Trond publishes them. Newest first.
+
+### 0.2.0 — 2026-07-02
+- Added **#60 The output nobody owned** and **#61 Rearranging the furniture** (59 → 61 dysfunctions). Generated via the auto-update pipeline; both passed the targeted routing/triggering test.
+
+### 0.1.0 — 2026-06-30
+- Initial release: 59 dysfunctions as one umbrella skill (router `SKILL.md` + `references/`), plus the eval/loop harness and the autoresearch-style tuning loop.
