@@ -33,7 +33,7 @@ Capture the issue number.
 - Branch: `git checkout -b add/dysfunctions-<lowest>-<highest>` off `main`.
 - For each NEW item, following `loop/authoring-guide.md`: fetch the post, synthesise `references/NN-slug.md` (symptom → sociotechnical diagnosis with the specific OST construct → structural fix + local moves → 3–5 `[[related]]` links to existing slugs).
 - Update `skills/organisational-dysfunction/SKILL.md`: insert an index line for each new item under the best-fit theme heading, in the form `- **#N Title** — one-line cue. → references/NN-slug.md`.
-- Update `README.md`: bump the **Contents** row of the metadata table (`1 skill · <count> dysfunctions`) and the **Version** row; and add a dated entry to the **Changelog** section (newest first, `### <version> — <YYYY-MM-DD>`) summarising the added dysfunction(s). Bump `.claude-plugin/marketplace.json` `version` to match.
+- Update `README.md`: bump the **Contents** row of the metadata table (`1 skill · <count> dysfunctions`) **and every other `<count> dysfunctions` mention in the prose** (e.g. "It packages N named dysfunctions", "index of all N dysfunctions") — a stale count in the body is easy to miss; bump the **Version** row too; and add a dated entry to the **Changelog** section (newest first, `### <version> — <YYYY-MM-DD>`) summarising the added dysfunction(s). Bump `.claude-plugin/marketplace.json` `version` to match.
 
 ### 4. Test (targeted)
 For each new item, append a realistic scenario to `evals/scenarios.json` (`should_trigger: true`, `expected_refs: ["NN-slug"]`), then from `loop/` run the harness on just the new scenario(s):
