@@ -1,0 +1,50 @@
+name: Release on version bump
+
+# Cuts a GitHub Release the moment a version bump lands on main (e.g. when a PR
+# that adds a new dysfunction is merged). Idempotent: it runs on every push but
+# only creates a release when the version in marketplace.json has no tag yet.
+# Uses the built-in GITHUB_TOKEN — no secrets required (same-repo release).
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cut a release when the version is new
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          VERSION=$(jq -r '.metadata.version' .claude-plugin/marketplace.json)
+          TAG="v${VERSION}"
+
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $TAG already exists — nothing to do."
+            exit 0
+          fi
+
+          # Release notes = this version's section from the README Changelog.
+          NOTES=$(awk -v ver="$VERSION" '
+            $0 ~ ("^### " ver "([^0-9]|$)") { grab=1; next }
+            grab && /^### / { exit }
+            grab { print }
+          ' README.md)
+          [ -z "$NOTES" ] && NOTES="Release $TAG."
+
+          # Build the upload ZIP for the Claude.ai/Desktop Skills path (folder at ZIP root).
+          ( cd skills && zip -r -q -X organisational-dysfunction-skill.zip organisational-dysfunction -x '*.DS_Store' )
+
+          gh release create "$TAG" \
+            skills/organisational-dysfunction-skill.zip \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$TAG — organisational-dysfunction" \
+            --notes "$NOTES"
+          echo "Created release $TAG."
