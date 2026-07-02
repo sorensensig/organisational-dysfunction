@@ -33,7 +33,7 @@ Capture the issue number.
 - Branch: `git checkout -b add/dysfunctions-<lowest>-<highest>` off `main`.
 - For each NEW item, following `loop/authoring-guide.md`: fetch the post, synthesise `references/NN-slug.md` (symptom → sociotechnical diagnosis with the specific OST construct → structural fix + local moves → 3–5 `[[related]]` links to existing slugs).
 - Update `skills/organisational-dysfunction/SKILL.md`: insert an index line for each new item under the best-fit theme heading, in the form `- **#N Title** — one-line cue. → references/NN-slug.md`.
-- Update `README.md`: bump the **Contents** row of the metadata table (`1 skill · <count> dysfunctions`).
+- Update `README.md`: bump the **Contents** row of the metadata table (`1 skill · <count> dysfunctions`) and the **Version** row; and add a dated entry to the **Changelog** section (newest first, `### <version> — <YYYY-MM-DD>`) summarising the added dysfunction(s). Bump `.claude-plugin/marketplace.json` `version` to match.
 
 ### 4. Test (targeted)
 For each new item, append a realistic scenario to `evals/scenarios.json` (`should_trigger: true`, `expected_refs: ["NN-slug"]`), then from `loop/` run the harness on just the new scenario(s):
@@ -63,7 +63,9 @@ Stop here for these items — the maintainer reviews and merges.
 Propagate anything already **merged** into sorensensig `main` but **missing** from kihub — this is the "on-merge" step, implemented as a poll so no event trigger or secret is needed.
 - Clone `Altinn/kihub`. Compute references present in sorensensig `main` but absent from `Altinn/kihub`'s `skills/organisational-dysfunction/references/` (and not already covered by an open kihub PR).
 - If any: branch, copy those reference files into kihub's skill folder, then run `npm ci` (once), `npm run skill:validate`, and `npm run build` (regenerates `docs/README.skills.md`). Do **not** copy the source repo's root README, marketplace.json, loop/, or evals/ — kihub keeps only the skill folder (SKILL.md + references + its own kihub-path README).
+- Add a dated entry to the **Changelog** in kihub's `skills/organisational-dysfunction/README.md` for the propagated dysfunction(s).
 - Commit, push, and open a PR to `Altinn/kihub` describing which dysfunctions were added and crediting the source series.
+- **Cut a source release (this is the notification mechanism):** if a new version was just merged into sorensensig `main` and no release exists for it yet, run `gh release create v<version> --repo sorensensig/organisational-dysfunction --notes "<that version's Changelog section>"`, then rebuild the upload ZIP (`cd skills && zip -r /tmp/organisational-dysfunction-skill.zip organisational-dysfunction`) and attach it (`gh release upload v<version> /tmp/organisational-dysfunction-skill.zip`). People who Watch the repo get notified, and the ZIP is what web/desktop users re-download.
 
 ### 7. Report
 Print a short summary. The durable artifacts are the issue and PR(s); rely on those, not the completion notification.
