@@ -53,6 +53,8 @@ git clone https://github.com/sorensensig/organisational-dysfunction
 cp -r organisational-dysfunction/skills/organisational-dysfunction ~/.claude/skills/
 ```
 
+> **A copied folder won't update itself.** Click **Watch → Releases** on this repo to be notified when a new version ships, then re-run the copy.
+
 ### Claude Cowork
 
 1. Open the **Cowork** tab → **Customize** → **Plugins**.
@@ -70,7 +72,7 @@ These use the **Skills** feature — you upload the packaged skill.
 2. **Download the packaged skill:** [**organisational-dysfunction-skill.zip**](https://github.com/sorensensig/organisational-dysfunction/releases/latest) (from the latest release).
 3. Go to **Customize → Skills**, click **+** → **Create skill** → **Upload a skill**, and select the ZIP.
 
-Skills uploaded this way are per-user and don't sync to other surfaces.
+Skills uploaded this way are per-user, don't sync to other surfaces, and **don't auto-update** — click **Watch → Releases** on this repo to know when a new version ships, then re-download the ZIP and re-upload.
 *(To build the ZIP yourself: `cd skills && zip -r organisational-dysfunction-skill.zip organisational-dysfunction` — the folder must sit at the ZIP's root.)*
 
 ### Team / scripted setup (Claude Code)
