@@ -53,11 +53,11 @@ Each new scenario should trigger and route to its new slug. Record the result. *
 Commit, push the branch, and open a **draft** PR to `main`, **assigned to the owner** (GitHub blocks the author from being a *reviewer*, so assignment is how it lands in their queue):
 ```bash
 gh pr create --repo sorensensig/organisational-dysfunction --base main --head <branch> --draft \
-  --assignee @me \
+  --assignee sorensensig \
   --title "Add N new dysfunction(s): #<nums>" \
   --body "Closes #<issue>. Auto-generated. <per-item summary + the targeted-test results, pass or fail>."
 ```
-Stop here for these items — the maintainer reviews and merges.
+Stop here for these items — the maintainer reviews and merges. In the PR body, if you mention the maintainer write the literal username **`@sorensensig`** — never `@me`, which is a `gh` CLI token only and renders in Markdown as a broken mention to `github.com/me`.
 
 ### 6. Reconcile into kihub (runs every time, independent of steps 1–5)
 Propagate anything already **merged** into sorensensig `main` but **missing** from kihub — this is the "on-merge" step, implemented as a poll so no event trigger or secret is needed.
