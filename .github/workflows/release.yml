@@ -1,9 +1,14 @@
 name: Release on version bump
 
-# Cuts a GitHub Release the moment a version bump lands on main (e.g. when a PR
-# that adds a new dysfunction is merged). Idempotent: it runs on every push but
-# only creates a release when the version in marketplace.json has no tag yet.
+# Cuts a GitHub Release the moment a release folder's version bumps on main (e.g.
+# when a PR that adds a new dysfunction is merged). Idempotent: it runs on every
+# push but only creates a release when a release's version has no tag yet.
 # Uses the built-in GITHUB_TOKEN — no secrets required (same-repo release).
+#
+# Folder-per-release store: each release lives in its own top-level folder with a
+# `.claude-plugin/plugin.json`. Tags are namespaced per release —
+# `<release>-v<version>` — so releases version independently and never collide.
+# Adding a future release = add its folder to the RELEASES list below.
 
 on:
   push:
@@ -15,36 +20,40 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        release: [organisational-dysfunction]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Cut a release when the version is new
+      - name: Cut a release when a release folder's version is new
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE: ${{ matrix.release }}
         run: |
           set -euo pipefail
-          VERSION=$(jq -r '.metadata.version' .claude-plugin/marketplace.json)
-          TAG="v${VERSION}"
+          VERSION=$(jq -r '.version' "$RELEASE/.claude-plugin/plugin.json")
+          TAG="${RELEASE}-v${VERSION}"
 
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo "Release $TAG already exists — nothing to do."
             exit 0
           fi
 
-          # Release notes = this version's section from the README Changelog.
+          # Release notes = this version's section from the release's README Changelog.
           NOTES=$(awk -v ver="$VERSION" '
             $0 ~ ("^### " ver "([^0-9]|$)") { grab=1; next }
             grab && /^### / { exit }
             grab { print }
-          ' README.md)
+          ' "$RELEASE/README.md")
           [ -z "$NOTES" ] && NOTES="Release $TAG."
 
           # Build the upload ZIP for the Claude.ai/Desktop Skills path (folder at ZIP root).
-          ( cd skills && zip -r -q -X organisational-dysfunction-skill.zip organisational-dysfunction -x '*.DS_Store' )
+          ( cd "$RELEASE/skills" && zip -r -q -X "${RELEASE}-skill.zip" "$RELEASE" -x '*.DS_Store' )
 
           gh release create "$TAG" \
-            skills/organisational-dysfunction-skill.zip \
+            "$RELEASE/skills/${RELEASE}-skill.zip" \
             --repo "$GITHUB_REPOSITORY" \
-            --title "$TAG — organisational-dysfunction" \
+            --title "$TAG" \
             --notes "$NOTES"
           echo "Created release $TAG."

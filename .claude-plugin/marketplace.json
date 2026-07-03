@@ -1,22 +1,16 @@
 {
-  "name": "sorensen-skills",
+  "name": "ai-corner-store",
   "owner": {
     "name": "Sigurd Sæther Sørensen",
     "email": "sorensensig@gmail.com"
   },
   "metadata": {
-    "description": "Org-design skills for diagnosing organisational and team dysfunctions through open sociotechnical systems theory.",
-    "version": "0.2.0"
+    "description": "A small, curated shop of AI skills, plugins, and bundles — each a self-contained release you can install on its own. One folder per release."
   },
   "plugins": [
     {
       "name": "organisational-dysfunction",
-      "description": "Diagnose recurring organisational and team dysfunctions (stuck decisions, hollow agile rituals, metric-chasing, disengagement, change that never lands) using open sociotechnical systems theory and the DP1/DP2 design-principle lens.",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/organisational-dysfunction"
-      ]
+      "source": "./organisational-dysfunction"
     }
   ]
 }
