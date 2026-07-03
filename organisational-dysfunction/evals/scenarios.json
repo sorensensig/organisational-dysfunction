@@ -146,6 +146,12 @@
       "should_trigger": true,
       "expected_refs": ["61-rearranging-the-furniture"]
     },
+    {
+      "id": "workshop-turned-sour",
+      "prompt": "we ran a big all-hands workshop — great keynote, then really good breakout group work, everyone engaged. then we had a panel of senior leaders give feedback on what the groups produced and the whole room went cold: pointed questions, people clammed up, it ended with winners and losers instead of alignment. the facilitator was excellent so I don't get what went wrong. how do we run these so they don't collapse halfway?",
+      "should_trigger": true,
+      "expected_refs": ["62-the-agenda-that-sabotaged-itself"]
+    },
 
     {
       "id": "neg-reword-okrs",
