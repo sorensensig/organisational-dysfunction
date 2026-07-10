@@ -11,6 +11,10 @@
     {
       "name": "organisational-dysfunction",
       "source": "./organisational-dysfunction"
+    },
+    {
+      "name": "ai-footprint",
+      "source": "./ai-footprint"
     }
   ]
 }

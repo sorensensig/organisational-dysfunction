@@ -1,0 +1,9 @@
+{"type":"user","uuid":"u-1","message":{"role":"user","content":"hello fixture"}}
+{"type":"assistant","uuid":"a-1","message":{"id":"msg_haiku_1","model":"claude-haiku-4-5","usage":{"input_tokens":1000000,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0}}}
+{"type":"assistant","uuid":"a-1b","message":{"id":"msg_haiku_1","model":"claude-haiku-4-5","usage":{"input_tokens":1000000,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0}}}
+{"type":"assistant","uuid":"a-2","message":{"id":"msg_sonnet_1","model":"claude-sonnet-4-5","usage":{"input_tokens":500000,"cache_creation_input_tokens":500000,"cache_read_input_tokens":12500000,"output_tokens":250000}}}
+{"type":"assistant","uuid":"a-3","message":{"id":"msg_opus_1","model":"claude-opus-4-1","usage":{"input_tokens":100000,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":100000}}}
+{"type":"assistant","uuid":"a-4","message":{"id":"msg_synth_1","model":"<synthetic>","usage":{"input_tokens":999999,"output_tokens":999999}}}
+{"type":"assistant","uuid":"a-5","message":{"id":"msg_nousage_1","model":"claude-opus-4-1","content":[{"type":"text","text":"a line without usage should be ignored"}]}}
+{"type":"system","uuid":"s-1","content":"system noise line"}
+this line is not valid JSON and must be skipped
