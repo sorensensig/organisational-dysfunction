@@ -1,0 +1,12 @@
+{
+  "name": "ai-footprint",
+  "version": "0.1.0",
+  "description": "Order-of-magnitude environmental footprint estimates (CO2e + water, always as ranges) for Claude Code sessions: a /footprint report command and an optional statusline script. Zero dependencies, zero network calls.",
+  "author": {
+    "name": "Sigurd Sæther Sørensen",
+    "email": "sorensensig@gmail.com"
+  },
+  "commands": [
+    "./commands/footprint.md"
+  ]
+}

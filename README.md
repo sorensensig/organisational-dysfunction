@@ -15,6 +15,7 @@ A small, curated shop of AI skills, plugins, and bundles — each a **self-conta
 | Release | What it is | Install path |
 |---|---|---|
 | [`organisational-dysfunction`](./organisational-dysfunction) | Diagnose org & team dysfunction as a problem of structure, not people — 61 named dysfunctions read through open sociotechnical systems theory. | `organisational-dysfunction` |
+| [`ai-footprint`](./ai-footprint) | Order-of-magnitude environmental footprint estimates (CO2e + water, always as ranges) for your Claude Code sessions — a `/footprint` report and an optional statusline. Zero deps, zero network calls. | `ai-footprint` |
 | _more coming_ | | |
 
 ## Installing

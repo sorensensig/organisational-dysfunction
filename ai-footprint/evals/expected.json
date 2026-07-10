@@ -1,0 +1,16 @@
+{
+  "_comment": "Hand-computed from fixture-transcript.jsonl. haiku: 1M input tokens x 0.07 kWh/Mtok = 0.07 kWh (the duplicate message-id line must NOT double it). sonnet: (0.5M input + 0.5M cache-write) x 0.14 + 12.5M cache-read x 0.14 x 0.08 + 0.25M output x 2.88 = 0.14 + 0.14 + 0.72 = 1.0 kWh. opus: 0.1M x 0.27 + 0.1M x 5.76 = 0.603 kWh. Total 1.673 kWh; range = /3 .. x3; CO2e = kWh x 287 g; water on-site = kWh x 0.18 L; off-site = kWh x 2..3 L; paper = CO2e/5g and off-site water/10L.",
+  "kwh_central": 1.673,
+  "kwh_range": [0.5576666666666666, 5.019],
+  "co2_g_range": [160.05033333333333, 1440.453],
+  "water_onsite_l_range": [0.10038, 0.90342],
+  "water_offsite_l_range": [1.1153333333333333, 15.057],
+  "paper_by_co2_range": [32.01006666666667, 288.0906],
+  "paper_by_water_range": [0.11153333333333333, 1.5057],
+  "per_model_kwh": {
+    "claude-haiku-4-5": 0.07,
+    "claude-sonnet-4-5": 1.0,
+    "claude-opus-4-1": 0.603
+  },
+  "model_count": 3
+}

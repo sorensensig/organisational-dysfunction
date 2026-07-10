@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        release: [organisational-dysfunction]
+        release: [organisational-dysfunction, ai-footprint]
     steps:
       - uses: actions/checkout@v4
 
@@ -49,10 +49,16 @@ jobs:
           [ -z "$NOTES" ] && NOTES="Release $TAG."
 
           # Build the upload ZIP for the Claude.ai/Desktop Skills path (folder at ZIP root).
-          ( cd "$RELEASE/skills" && zip -r -q -X "${RELEASE}-skill.zip" "$RELEASE" -x '*.DS_Store' )
+          # Skill-less releases (e.g. command/script plugins like ai-footprint) get a
+          # release without an asset — the Skills upload path doesn't apply to them.
+          ASSETS=()
+          if [ -d "$RELEASE/skills" ]; then
+            ( cd "$RELEASE/skills" && zip -r -q -X "${RELEASE}-skill.zip" "$RELEASE" -x '*.DS_Store' )
+            ASSETS+=("$RELEASE/skills/${RELEASE}-skill.zip")
+          fi
 
           gh release create "$TAG" \
-            "$RELEASE/skills/${RELEASE}-skill.zip" \
+            ${ASSETS[@]+"${ASSETS[@]}"} \
             --repo "$GITHUB_REPOSITORY" \
             --title "$TAG" \
             --notes "$NOTES"
